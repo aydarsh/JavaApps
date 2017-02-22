@@ -17,13 +17,14 @@ public class JDBCstudents {
 			System.out.println("Creating statement...");
 			stmt = conn.createStatement();
 			String sql;
-			sql = "SELECT * FROM students";
+			sql = "SELECT students.name, avg(exams.score) AS mark FROM students JOIN exams ON students.s_id=exams.s_id GROUP BY students.name";
 			ResultSet rs = stmt.executeQuery(sql);
 
 			while (rs.next()) {
 				String name = rs.getString("name");
+				String mark = rs.getString("mark");
 
-				System.out.println("Name: " + name);
+				System.out.println("Name: " + name + "\tMark: " + mark);
 			}
 			rs.close();
 			stmt.close();
