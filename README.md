@@ -1,4 +1,4 @@
-## QuadraticEquation
+## QuadraticEquationSolver
 A simple quadratic equation solver application
 
 
