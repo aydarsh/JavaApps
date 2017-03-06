@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate Mapping DTD//EN" "http://www.hibernate.org/dtd/hibernate-mapping-3.0.dtd">
+
+<hibernate-mapping>
+    <class name="javaapps.Student" table="students">
+        <meta attribute="class-description">
+            This class contains student details
+        </meta>
+        <id name="id" type="int" column="s_id"/>
+        <!--<property name="s_id" column="s_id" type="int"/>-->
+        <property name="name" column="name" type="string"/>
+        <property name="start_year" column="start_year" type="int"/>
+    </class>
+</hibernate-mapping>
