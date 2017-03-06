@@ -16,3 +16,6 @@ After that, make a password (for example, 'postgres') for the test database to b
 
 ## SpringJDBCStudents
 This application uses Spring + JDBC to connect to a PostgreSQL database.
+
+## SpringHibernateStudents
+This application uses Spring + Hibernate to connect to a PostgreSQL database.
