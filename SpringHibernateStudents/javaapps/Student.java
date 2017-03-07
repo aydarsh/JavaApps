@@ -2,7 +2,6 @@ package javaapps;
 
 public class Student {
     private Integer id;
-//    private Integer s_id;
     private String name;
     private Integer start_year;
 
@@ -20,14 +19,6 @@ public class Student {
     public int getId() {
         return id;
     }
-
-//    public void setS_id(Integer s_id){
-//        this.s_id = s_id;
-//    }
-//
-//    public Integer getS_id(){
-//        return s_id;
-//    }
 
     public void setName(String name) {
         this.name = name;

@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate Mapping DTD//EN" "http://www.hibernate.org/dtd/hibernate-mapping-3.0.dtd">
+
+<hibernate-mapping>
+    <class name="javaapps.Exam" table="exams">
+        <meta attribute="class-description">
+            This class contains exam details
+        </meta>
+        <id name="id" type="int" column="s_id"/>
+        <property name="c_no" column="c_no" type="string"/>
+        <property name="score" column="score" type="int"/>
+    </class>
+
+</hibernate-mapping>
