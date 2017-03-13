@@ -19,3 +19,6 @@ This application uses Spring + JDBC to connect to a PostgreSQL database.
 
 ## SpringHibernateStudents
 This application uses Spring + Hibernate to connect to a PostgreSQL database.
+
+## HelloStudents
+This is a simple one-table Spring MVC + Hibernate application.
