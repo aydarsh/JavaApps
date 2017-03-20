@@ -22,3 +22,6 @@ This application uses Spring + Hibernate to connect to a PostgreSQL database.
 
 ## HelloStudents
 This is a simple one-table Spring MVC + Hibernate application.
+
+## HelloSpringMVC
+This is a simple Spring MVC + Hibernate + Bootstrap application.
