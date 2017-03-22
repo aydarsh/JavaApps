@@ -28,6 +28,12 @@ public class StudentsController {
         this.studentsService = studentsService;
     }
     
+    @RequestMapping(value = "/", method = RequestMethod.GET)
+    public String index(Model model) {
+	return "redirect:/students";
+    }
+
+    
     @RequestMapping(value = "/students", method = RequestMethod.GET)
     public String listStudents(Model model){
 //        model.addAttribute("student", new Students());
@@ -35,8 +41,9 @@ public class StudentsController {
         return "index";
     }
     
-    @RequestMapping(value = "/students", method = RequestMethod.POST)
+    @RequestMapping(value = "../newstudent", method = RequestMethod.POST)
     public String addStudent(@ModelAttribute("student") Students student){
+//	model.addAttribute("student", new Students());
 	logger.info("student.name: "+student.getName()+" birthday: "+student.getBirthday());
 	this.studentsService.addStudent(student);
 	return "redirect:/students";
@@ -60,7 +67,7 @@ public class StudentsController {
         return "redirect:/students";
     }
     
-    @RequestMapping(value = "/students/{id}/edit", method = RequestMethod.GET)
+    @RequestMapping(value = "students/{id}/edit", method = RequestMethod.GET)
     public String editStudent(@PathVariable("id") int id, Model model){
         model.addAttribute("student", this.studentsService.getStudentById(id));
 //        model.addAttribute("listStudents", this.studentsService.listStudents());

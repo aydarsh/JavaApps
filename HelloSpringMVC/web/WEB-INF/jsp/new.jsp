@@ -23,7 +23,7 @@
         </div>
 	</nav>
         <h1>Add a Student</h1>
-<form:form class="form-inline" action="/students" method="POST" commandName="student">
+<form:form class="form-inline" action="/HelloSpringMVC/newstudent" method="POST" commandName="student">
     <div class="form-group">
 	<form:label path="name">Name</form:label>
 	<form:input class="form-control" path="name" placeholder="Name"/>
